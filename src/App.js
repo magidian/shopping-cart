@@ -3,7 +3,6 @@ import DataProvider from "./components/Context";
 import "./App.css";
 import About from "./components/section/About";
 import Home from "./components/section/Home";
-import Contact from "./components/section/Contact";
 import Products from "./components/section/Products";
 import Details from "./components/section/Details";
 import Header from "./components/Header";
@@ -17,21 +16,20 @@ function App() {
   return (
     <DataProvider>
       <BrowserRouter>
-        <div className="App">
-          <Header />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/product" exact component={Products} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/product/:id" component={Details} />
-            <Route path="/cart" component={Cart} />
-            <Route path="/payment" component={Payment} />
-            <Route path="/login" component={LoginForm} />
-            <Route path="/signup" component={SignupForm} />
-            <Route path="/identify" component={Identify} />
-          </Switch>
-        </div>
+          <div className="App">
+            <Header />
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/product" exact component={Products} />
+              <Route path="/about" component={About} />
+              <Route path="/product/:id" component={Details} />
+              <Route path="/cart" component={Cart} />
+              <Route path="/payment" component={Payment} />
+              <Route path="/login" component={LoginForm} />
+              <Route path="/signup" component={SignupForm} />
+              <Route path="/identify" component={Identify} />
+            </Switch>
+          </div>
       </BrowserRouter>
     </DataProvider>
   );

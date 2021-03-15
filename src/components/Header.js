@@ -38,9 +38,6 @@ function Header() {
           <li>
             <Link to="/about">About</Link>
           </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
           <li><Link to='/login'>log in / sign up</Link></li>
           <li className="close" onClick={menuToggle}>
             <img src={Close} alt="" width="20" />
