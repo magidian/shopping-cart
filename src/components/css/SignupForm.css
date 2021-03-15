@@ -93,3 +93,7 @@ input.invalid +p {
     height: auto;
     margin-bottom: 20px;
 }
+
+p {
+    pointer-events: none;
+}

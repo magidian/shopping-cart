@@ -64,7 +64,7 @@ function LoginForm() {
           </div>
         </form>
       ) : (
-        <h1>Welcome {details.username}</h1>
+        <h1 style={{textAlign: 'center', color: 'whitesmoke'}}>Welcome {details.username}</h1>
       )}
     </div>
   );

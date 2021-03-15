@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, HashRouter } from "react-router-dom";
 import DataProvider from "./components/Context";
 import "./App.css";
 import About from "./components/section/About";
@@ -16,6 +16,7 @@ function App() {
   return (
     <DataProvider>
       <BrowserRouter>
+        <HashRouter basename="/">
           <div className="App">
             <Header />
             <Switch>
@@ -30,6 +31,7 @@ function App() {
               <Route path="/identify" component={Identify} />
             </Switch>
           </div>
+        </HashRouter>
       </BrowserRouter>
     </DataProvider>
   );

@@ -5,16 +5,7 @@ function About() {
   return (
     <div>
       <section className="about">
-        <h1
-          //   style={{
-          //     textAlign: "center",
-          //     marginLeft: "0px",
-          //     marginTop: "100px",
-          //     marginBottom: "10px",
-          //     color: "white",
-          //   }}
-          className="about-heading"
-        >
+        <h1 className="about-heading">
           About Us
         </h1>
         <p className="about-body">

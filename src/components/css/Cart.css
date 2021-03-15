@@ -1,6 +1,6 @@
 .cart {
     position: relative;
-    border: 1px solid #ccc;
+    border: 1px groove #ccc;
 }
 
 .amount {
@@ -8,23 +8,38 @@
 }
 
 .amount span {
-    color: crimson;
+    color: whitesmoke;
     padding: 0 10px;
 }
 
-.amount .count {
+.amount .count-btn {
     width: 30px;
     height: 20px;
-    border: 1px solid #ccc;
-    background: transparent;
+    border: none;
+    outline: none;
     cursor: pointer;
+    color: darkblue;
+    font-weight: 800;
+    background: rgb(224, 221, 216);
+    border-radius: 30px;
 }
+
+.amount .count-btn:hover {
+    color: white;
+    background: grey;
+}
+
+
+/* .quantity {
+    padding-top: 20px;
+    color: whitesmoke;
+} */
 
 .delete {
     position: absolute;
     top: 0;
     right: 5px;
-    color: crimson;
+    color: whitesmoke;
     cursor: pointer;
     font-weight: 600;
 }
@@ -48,5 +63,5 @@
 
 .total h3 {
     margin-right: 40px;
-    color: crimson;
+    color: whitesmoke;
 }

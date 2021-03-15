@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { DataContext } from "../Context";
 import Colors from "./Colors";
-import '../css/Details.css'
+import "../css/Details.css";
 
 export class Details extends Component {
   static contextType = DataContext;
@@ -26,6 +25,7 @@ export class Details extends Component {
 
   render() {
     const { product } = this.state;
+    const { increment, decrement, addCart } = this.context;
 
     return (
       <div>
@@ -37,10 +37,23 @@ export class Details extends Component {
                 <h2>{item.title}</h2>
                 <span>${item.price}</span>
               </div>
-              <Colors colors={item.colors}/>
-              <Link to="/cart" className="cart">
+              <Colors colors={item.colors} />
+              {/* <Link to="/cart" className="cart">
                 Add to Cart
-              </Link>
+              </Link> */}
+              {/* <div className="amount">
+                <button className="count" onClick={() => decrement(item._id)}>
+                  -
+                </button>
+                <span>{item.count}</span>
+                <button className="count" onClick={() => increment(item._id)}>
+                  +
+                </button>
+              </div> */}
+
+              <button className="cart-btn" onClick={() => addCart(item._id)}>
+                Add to cart
+              </button>
             </div>
           </div>
         ))}

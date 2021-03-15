@@ -20,9 +20,9 @@ class Products extends Component {
                 <Link to={`/product/${product._id}`}>{product.title}</Link>
               </h3>
               <span>${product.price}</span>
-              <div>
+              {/* <div>
                 <button onClick={() => this.context.addCart(product._id)}>Add to cart</button>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

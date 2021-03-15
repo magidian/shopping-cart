@@ -15,7 +15,7 @@ section.contact {
 
 .about-heading {
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: rgb(221, 217, 217);
     text-align: center;
     margin-top: 0;
 }
@@ -24,6 +24,7 @@ section.contact {
     font-family: 'Montserrat', sans-serif;
     width: 400px;
     margin: 0 auto;
+    color: rgb(221, 217, 217);
 }
 
 .contact-icon {

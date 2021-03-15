@@ -28,10 +28,11 @@
 .box .row h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: whitesmoke;
 }
 
 .box .row span {
-    color: crimson;
+    color: whitesmoke;
     margin-top: 25px;
 }
 
@@ -43,14 +44,41 @@
     margin-right: 5px;
 }
 
-.box .cart {
-    background: #333;
+.box .cart-btn {
+    background: #C88D5A;
     color: white;
     text-decoration: none;
     padding: 10px 25px;
-    margin: 10px 0;
+    margin: 20px 0;
     display: inline-block;
+    border: none;
+    outline: none;
+    transition: linear 0.1s;
 }
+
+.box .cart-btn:hover {
+    transform: scale(0.9);
+}
+
+
+/* .amount {
+    padding: 20px 0;
+}
+
+.amount span {
+    color: whitesmoke;
+    padding: 0 10px;
+}
+
+.amount .count {
+    width: 30px;
+    height: 20px;
+    border: 1px solid grey;
+    background: transparent;
+    cursor: pointer;
+    color: whitesmoke;
+    outline: none;
+} */
 
 /* button {
     border: none;

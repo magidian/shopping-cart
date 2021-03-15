@@ -56,7 +56,6 @@ function SignupForm() {
           <h2 className="form-title">Sign Up</h2>
           <div className="form-input">
             <input
-              autoFocus
               type="text"
               name="username"
               placeholder="Username"
@@ -118,7 +117,7 @@ function SignupForm() {
           </div>
         </form>
       ) : (
-        <h1>Thanks for registering, {details.username}!</h1>
+        <h1 style={{textAlign: 'center', color: 'whitesmoke'}}>Thanks for registering, {details.username}!</h1>
       )}
     </div>
   );

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { DataContext } from "../Context";
 import Colors from "./Colors";
-import "../css/Details.css";
 import "../css/Cart.css";
 
 class Cart extends Component {
@@ -13,10 +12,10 @@ class Cart extends Component {
   }
 
   render() {
-    const { cart, decrement, increment, removeProduct, total} = this.context;
+    const { cart, increment, decrement, removeProduct, total} = this.context;
 
     if (cart.length === 0) {
-      return <h2 style={{ textAlign: "center" }}>Nothing's in the cart...</h2>;
+      return <h2 style={{ textAlign: "center", color: 'whitesmoke' }}>The cart is empty</h2>;
     } else {
       return (
         <div>
@@ -30,14 +29,15 @@ class Cart extends Component {
                 </div>
                 <Colors colors={item.colors} />
                 <div className="amount">
-                  <button className="count" onClick={() => decrement(item._id)}>
+                  <button className="count-btn" onClick={() => decrement(item._id)}>
                     -
                   </button>
                   <span>{item.count}</span>
-                  <button className="count" onClick={() => increment(item._id)}>
+                  <button className="count-btn" onClick={() => increment(item._id)}>
                     +
                   </button>
                 </div>
+                {/* <div className="quantity">Quantity: {item.count}</div> */}
               </div>
               <div className="delete" onClick={() => removeProduct(item._id)}>
                 x
