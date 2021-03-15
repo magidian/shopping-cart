@@ -18,7 +18,7 @@ function Header() {
   const cart = useContext(DataContext); //why is cart an object here
 
   return (
-    <header style={{background: 'lightgrey', position: 'sticky', top: 0}}>
+    <header>
       <div className="menu" onClick={menuToggle}>
         <img src={Menu} alt="" width="20" />
       </div>

@@ -5,7 +5,7 @@ import Colors from "./Colors";
 import "../css/Details.css";
 import "../css/Cart.css";
 
-export class Cart extends Component {
+class Cart extends Component {
   static contextType = DataContext;
 
   componentDidMount() {

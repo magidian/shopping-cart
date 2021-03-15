@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export const DataContext = React.createContext();
 
-export class DataProvider extends Component {
+class DataProvider extends Component {
   state = {
     products: [
       {
@@ -148,9 +148,15 @@ export class DataProvider extends Component {
       }
   }
 
+  clearCart = () => {
+    this.setState({
+      cart: [],
+    });
+  }
+
   render() {
     const { products, cart, total } = this.state;
-    const { addCart, increment, decrement, removeProduct, getTotal } = this;
+    const { addCart, increment, decrement, removeProduct, getTotal, clearCart } = this;
 
     return (
       <DataContext.Provider
@@ -163,6 +169,7 @@ export class DataProvider extends Component {
           removeProduct,
           total,
           getTotal,
+          clearCart
         }}
       >
         {this.props.children}

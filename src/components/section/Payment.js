@@ -1,13 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import { DataContext } from "../Context";
 
-export class Payment extends Component {
-    render() {
-        return (
-            <div>
-                <h2 style={{textAlign: "center"}}>Thanks for the purchase</h2>
-            </div>
-        )
-    }
+class Payment extends Component {
+  static contextType = DataContext;
+
+  componentDidMount() {
+    this.context.clearCart()
 }
 
-export default Payment
+  render() {
+    return (
+      <div>
+        <h2 style={{ textAlign: "center" }}>Thanks for the purchase</h2>
+      </div>
+    );
+  }
+}
+
+export default Payment;

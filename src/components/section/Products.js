@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { DataContext } from "../Context";
 import '../css/Products.css'
 
-export class Products extends Component {
+class Products extends Component {
   static contextType = DataContext;
 
   render() {
