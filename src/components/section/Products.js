@@ -12,17 +12,14 @@ class Products extends Component {
       <div id="product">
         {products.map((product) => (
           <div className="card" key={product._id}>
-            <Link to={`/product/${product._id}`}>
+            <Link to={`/products/${product._id}`}>
               <img src={product.src} alt="" />
             </Link>
             <div className="content">
               <h3>
-                <Link to={`/product/${product._id}`}>{product.title}</Link>
+                <Link to={`/products/${product._id}`}>{product.title}</Link>
               </h3>
               <span>${product.price}</span>
-              {/* <div>
-                <button onClick={() => this.context.addCart(product._id)}>Add to cart</button>
-              </div> */}
             </div>
           </div>
         ))}

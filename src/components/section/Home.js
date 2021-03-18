@@ -1,14 +1,19 @@
-import React from 'react'
-import '../css/Home.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "../css/Home.css";
 
 function Home() {
-    return (
-        <div>
-            {/* <h1 className='home-text'>Just do it.</h1> */}
-            <h1 className='home-text'>Welcome to Shoose</h1>
-            <p className='home-para'>where the world meets the shoes worldwide.</p>
-        </div>
-    )
+  return (
+    <div className="home-container">
+      <div className='home-text'>
+        <h1 className="welcome">Welcome to the shoe shop</h1>
+
+        <Link to="/products" className="shoplink">
+          View products here
+        </Link>
+      </div>
+    </div>
+  );
 }
 
-export default Home
+export default Home;

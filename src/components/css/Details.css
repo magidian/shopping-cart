@@ -26,7 +26,6 @@
 }
 
 .box .row h2 {
-    text-transform: uppercase;
     letter-spacing: 2px;
     color: whitesmoke;
 }
@@ -58,6 +57,10 @@
 
 .box .cart-btn:hover {
     transform: scale(0.9);
+}
+
+.link {
+    color: rgb(228, 220, 220);
 }
 
 

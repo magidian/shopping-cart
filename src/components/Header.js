@@ -24,7 +24,7 @@ function Header() {
       </div>
       <div className="logo">
         <h1>
-          <Link to="/">Shoose</Link>
+          <Link to="/">The Shoe Shop</Link>
         </h1>
       </div>
       <nav>
@@ -33,7 +33,7 @@ function Header() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/product">Product</Link>
+            <Link to="/products">Products</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
